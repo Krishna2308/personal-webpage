@@ -1,0 +1,246 @@
+/*
+Theme Name: Portfolio
+Author: Krishna Suresh
+Author URI: https://www.instagram.com/_krishn_.a/
+Version: 1.0
+*/
+
+body {
+	background-color: black;
+	color: grey;
+	/* font-family: 'Nova Flat'; */
+	font-family: arial;
+}
+.home {
+	position: absolute;
+	top: 0;
+}
+.about-me {
+	text-align: center;
+	height: 100%;
+	margin-top: 8%;
+	margin-bottom: 6%;
+	letter-spacing: 3px;
+	border-bottom: 1px solid grey;
+}
+.about-me span {
+	line-height: 35px;
+	word-spacing: 5px;
+}
+.about-me a {
+	color: #ffcc66;
+	text-decoration: none;
+}
+.about-me a:hover {
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-webkit-opacity: 0.5;
+}
+.about-me img {
+	width: 10%;
+	height: auto;
+	border-radius: 80%;
+	border: 1px solid #ffcc66;
+	margin: 0% 45% 2%;
+}
+.coding {
+	text-align: center;
+	line-height: 35px;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	height: 100%;
+	margin-bottom: 6%;
+	border-bottom: 1px solid grey;
+}
+.coding a {
+	color: #ffcc66;
+	text-decoration: none;
+}
+.coding a:hover {
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-webkit-opacity: 0.5;
+}
+h2 {
+	text-align: center;
+	/* font-size: 60px; */
+}
+img {
+	float: left;
+	margin: 2% 2% 2% 2%;
+	width: 100%;
+	height: 100%;
+}
+footer span {
+	text-align: center;
+	font-size: 25px;
+	float: left;
+}
+.instaimg img:hover {
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-webkit-opacity: 0.5;
+}
+.photography a {
+	color: #ffcc66;
+	text-decoration: none;
+	text-align: center;
+}
+.photography a:hover {
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-webkit-opacity: 0.5;
+}
+.my-footer {
+	width: 100%;
+}
+#my-button {
+	background-color: transparent;
+	height: 4%;
+	width: auto;
+	color: #ffcc66;;
+	margin: 4% 4% 4% 4%;
+	border: none;
+}
+#project {
+	height: auto;
+}
+#project a:hover {
+	opacity: 0.5;
+}
+#fig-caption {
+	word-spacing: normal;
+	font-size: 10px;
+}
+/*  */
+.content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+}
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+.content__container:before {
+  content: '[';
+  left: 0;
+}
+.content__container:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+}
+.content__container:after, .content__container:before {
+  position: absolute;
+  top: 0;
+  color:  #ffcc66;
+  font-size: 42px;
+  line-height: 40px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+.content__container__list {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%,62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%,79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%,95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%,62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%,79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%,95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+/*  */

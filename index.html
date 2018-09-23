@@ -1,0 +1,101 @@
+
+<html>
+
+	<head>
+		<title>Krishna Suresh</title>
+		<link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="css\style.css" />
+		<link id="icon" rel="icon" href="img\favicon.ico">
+	</head>
+
+	<body>
+		<head>
+			<div class="home" id="home">
+				<!-- Anchor to direct home button to -->
+			</div>
+			<!-- <div class="content">
+			  <div class="content__container">
+			    <p class="content__container__text">
+			      Hello,
+			    </p>
+			    <ul class="content__container__list">
+			      <li class="content__container__list__item">person!</li>
+			      <li class="content__container__list__item">human!</li>
+			      <li class="content__container__list__item">world!</li>
+			    </ul>
+			  </div>
+			</div> -->
+		</head>
+		<div class="container about-me">
+			<div class="row col-sm-12">
+				<img src="img\profile.png" alt="profile">
+			</div>
+			<span>Hello, I am <a href="https://www.linkedin.com/in/krishna-suresh-18496a135/" target="_blank">Krishna Suresh</a>.</br></span>
+			<span>I am a junior studying Computer Science at Purdue University.</span>
+			<span></br>When i'm not busy <a href="#coding">coding</a>, I enjoy playing/watching football, <a href="#photography">photography</a>, listening to music and playing video games. </br>I love making things and exploring my creativity.</span>
+		</br><a href="https://drive.google.com/file/d/1IVn9x7IbbsOu6H4YFpybZJGPxYayx081/view?usp=sharing" target="_blank"><button id="my-button" type="button" name="resume">My resume</button></a>
+		</div>
+
+		<div class="container coding" id="coding">
+			<h2>Fun things i've done</h2>
+			<span>Here are some projects I 've worked on.</br>I will be adding on to this section as I work on more projects.</br></span>
+			<div class="row">
+				<div class="col-sm-4">
+					<figure>
+						<h4>Insta API</h4>
+						<a href="#photography">
+							<img id="project" src="img\p2.png" alt="insta-feed">
+						</a>
+						<figcaption id="fig-caption">Used the Insagram API to sync my photos so that my portfolio automatically updates when I post a new photo.</figcaption>
+					</figure>
+				</div>
+				<div class="col-sm-4">
+					<figure>
+						<h4>Water$aver</h4>
+						<a href="https://github.com/Danimaltheanimal/Water-Saver">
+							<img id="project" src="img\p2.png" alt="insta-feed">
+						</a>
+						<figcaption id="fig-caption">Created an alexa skill
+							 to track water usage in the bathroom. (Click image to go to github repo)</figcaption>
+					</figure>
+				</div>
+			</div>
+			<a class="col-sm-12" href="#home">Home</a>
+		</div>
+		<div class="photography">
+			<h2><a name="photography"></a>My Feed</h2>
+			<div class="container">
+				<div id="instafeed" class="row"></div>
+				<a class="col-sm-12" href="#home">Home</a>
+			</div>
+		</div>
+
+		<div class="my-footer">
+		</br><span> &copy Krishna Suresh 2018</span>
+		</div>
+		<script type="text/javascript" src="js\instafeed.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js\bootstrap.min.js"></script>
+		<script>
+				var feed = new Instafeed({
+				get: 'user',
+				userId: 3646277371, // Ex: 1374300081
+				accessToken: '3646277371.72cdd2f.b9bf36907aff4a0c9a515ab47b6f5628',
+				// template: '<li><div><a href="{{link}}"><img src="{{image}}" /></a><h3>{{caption}}</h3></div></li>',
+				template: '<div class="col-sm-4 instaimg "><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
+				resolution: 'standard_resolution',
+				count: 15
+				});
+				feed.run();
+		</script>
+		<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+		</script>
+	</body>
+
+
+</html>
